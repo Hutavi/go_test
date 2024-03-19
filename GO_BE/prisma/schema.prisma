@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://root:root@3.26.240.4:5432/postgres"
+}
+
+model ProductShoe {
+  id          Int      @id @default(autoincrement())
+  name        String
+  price       Float
+  image       String
+  description String
+  color       String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
