@@ -40,10 +40,10 @@ services:
         labels:
             - traefik.enable=true
             - traefik.docker.network=proxy
-            - traefik.http.routers.demand-service.rule=Host(`go-shoe.mtech.id.vn`)
-            - traefik.http.routers.demand-service.entrypoints=websecure
-            - traefik.http.routers.demand-service.tls=true
-            - traefik.http.routers.demand-service.tls.certresolver=letsencrypt
+            - traefik.http.routers.gshoe-service.rule=Host(`go-shoe.mtech.id.vn`)
+            - traefik.http.routers.gshoe-service.entrypoints=websecure
+            - traefik.http.routers.gshoe-service.tls=true
+            - traefik.http.routers.gshoe-service.tls.certresolver=letsencrypt
         restart: unless-stopped
 
 networks:
