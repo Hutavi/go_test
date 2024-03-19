@@ -21,7 +21,7 @@ const ProductsSection = () => {
   useEffect(() => {
     // Call API using Axios
     axios
-      .get("http://3.26.240.4:5000/shoe")
+      .get("https://3.26.240.4:5000/shoe")
       .then((response) => {
         setShoes(response.data.data.data);
         setLoading(false);
